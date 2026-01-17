@@ -14,6 +14,33 @@ Archieve/
 *.cb
 *.cb2
 .*.lb
+v1/*.aux
+v2/*.aux
+v1/*.log
+v2/*.log
+v1/*.toc
+v2/*.toc
+v1/*.lot
+v2/*.lot
+v1/*.lof
+v2/*.lof
+v1/*.fls
+v2/*.fls
+v1/*.fmt
+v2/*.fmt
+v1/*.fot
+v2/*.fot
+v1/*.cb
+v2/*.cb2
+v1/.*.lb
+v2/.*.lb
+
+## BibTeX auxiliary files:
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+
 
 # github action result
 semicolon_delimited_script
