@@ -48,6 +48,8 @@ v2/*pdf
 *.blg
 *.run.xml
 
+/.latexmk/
+
 
 # github action result
 semicolon_delimited_script

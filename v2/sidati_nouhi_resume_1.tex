@@ -1,0 +1,38 @@
+%! TEX program = lualatex
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage{fontspec}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+% --- Font Loading ---
+% Arch installs these under these exact names
+\setmainfont{Inter}
+\setmonofont{Source Code Pro}
+
+% --- Professional Styling ---
+\pagestyle{empty}
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{6pt}
+
+\begin{document}
+
+\begin{center}
+    {\Huge \textbf{ALEX DEVELOPER}} \\ \vspace{4pt}
+    \texttt{alex.dev@archlinux.org} | \texttt{github.com/alexdev}
+\end{center}
+
+\section{Experience}
+\textbf{Systems Engineer} | \textit{Tech Corp} \hfill 2024 – Present
+\begin{itemize}
+    \item Managed high-availability clusters using \textbf{Kubernetes} and \textbf{Terraform}.
+    \item Optimized build pipelines, reducing deployment time by \textbf{25\%}.
+\end{itemize}
+
+\section{Skills}
+\textbf{Languages:} Rust, Go, Python, C++, Bash \\
+\textbf{Tools:} Neovim, Docker, Git, Linux (Arch/Debian)
+
+\end{document}

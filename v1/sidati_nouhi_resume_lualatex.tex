@@ -1,0 +1,213 @@
+%-------------------------
+% Resume in LateX
+% Author : Sidati NOUHI
+% License : MIT
+%------------------------
+
+%! TEX program = lualatex
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{fontspec}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% glyphtounicode is not needed with lualatex - unicode mapping is handled automatically
+
+% Set fonts for better rendering with lualatex
+% Using Noto Sans as a Roboto-like alternative (clean, modern sans-serif)
+\setmainfont{Noto Sans}
+\setmonofont{Source Code Pro}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% PDF is machine readable/ATS parsable by default with lualatex
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+
+% Fonts are now properly configured above with fontspec
+
+
+% Just in case someone needs a heading that does not need to be in a list
+% \usepackage{helvet}
+% \renewcommand{\familydefault}{\sfdefault}
+
+\setlength{\footskip}{5pt}
+
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\textbf{\Huge Sidati NOUHI} \\[0.2cm]
+\small{\textbf{Email:} \href{mailto:sidatinouhi@gmail.com}{sidatinouhi@gmail.com} \quad
+\textbf{Mobile:} \href{tel:+212655425113}{+212 655425113}} \\[0.1cm]
+\small{\textbf{GitHub:} \href{https://github.com/sidatii}{github.com/sidatii} \quad
+\textbf{LinkedIn:} \href{https://linkedin.com/in/yourprofile}{linkedin.com/in/sidati.nouhi}}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {UM6P - YouCode school}{Safi, Maroc}
+      {Software developement}{Sep 2022 -- Juil 2024}
+    \resumeSubheading
+      {Ibn zohr Univerity}{Agadir, Maroc}
+      {Master -- Financial engineering \& Modeling}{Sep 2019 -- Jul 2021}
+    \resumeSubheading
+      {Universite Ibn zohr}{Agadir, Maroc}
+      {License -- Economics \& Modeling}{Sep 2016 -- Jul 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Eurafric Information}{Casablanca, Morocco}
+      {Full stack developer}{Mar 2024 -- Present}
+      \resumeItemListStart
+      \resumeItem{Backend Development}
+      {Implemented monolithic and microservices-based systems using java, Spring Boot, JPA, and Spring Security for secure data access and business logic implementation.}
+      \resumeItem{Frontend Development}
+      {Developed responsive user interfaces using Angular framework with TypeScript, implementing modern UI/UX patterns and component-based architecture.}
+      \resumeItem{Database Management}
+      {Managed OracleDB databases, optimized queries, and implemented data caching strategies using Redis for improved application performance.}
+      \resumeItem{System Integration}
+      {Integrated change office, biometric data processing systems (including OCR, face matching, and face detection capabilities) using best practices for performance and reliability.}
+      \resumeItemListEnd
+      
+% --------Multiple Positions Heading------------
+  %  \resumeSubSubheading
+  %   {Software Engineer I}{Oct 2014 -- Sep 2016}
+  %   \resumeItemListStart
+  %      \resumeItem{Apache Beam}
+  %        {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+  %   \resumeItemListEnd
+
+%-------------------------------------------
+
+    \resumeSubheading
+      {Agri In}{Part-time, Remote}
+      {Backend Developer}{Jan 2024 -- Feb 2025}
+      \resumeItemListStart
+        \resumeItem{Product Design}
+        {Designed and developed scalable backend architecture and APIs for agricultural audit management platform, ensuring high performance and maintainability for enterprise clients.}
+        \resumeItem{Database Schema Design}
+        {Developed comprehensive database schemas for complex agricultural data models, implementing efficient indexing strategies, data relationships for optimal query performance and system caching to reduce database load and improve application response times by 60\%.}
+        \resumeItem{Multitenancy Architecture}
+        {Designed and implemented multitenant database architecture supporting multiple clients with isolated data while maintaining efficient resource utilization.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Cegedim}{Agadir}
+      {R\&D Intern}{Mar 2023 -- Aug 2023}
+      \resumeItemListStart
+        \resumeItem{CI/CD Pipeline Optimization}
+        {Optimized CI/CD pipelines for improved deployment efficiency, reducing build times by 40\% and increasing deployment frequency through automated testing and parallel processing.}
+      \resumeItemListEnd
+
+   \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  \resumeSubItem{\textbf{BIAN Party Management System (KYC) [IN PROGRESS]}}
+      {A BIAN compliant microservices-based system for managing parties, using Spring Framework (Spring Boot, JPA, Security, batch, springdocs, Neo4j), Redis, and OracleDB.}
+    \resumeSubItem{Correspondent Banking (FKYC)}
+      {Built a comprehensive correspondent banking management system (FKYC) using Spring Framework (Spring Boot, JPA, Security), Redis, OracleDB, and Angular for the frontend.}
+    \resumeSubItem{Biometric Data Processing System}
+      {Implemented OCR, face matching, and face detection capabilities for biometric data processing using Spring Framework (Spring Boot, JPA, Security), Redis, OracleDB.}
+    \resumeSubItem{Agri In platform}
+    {comprehensive agricultural audit management platform with scalable backend architecture and multitenant database design.}
+    \resumeSubItem{\textbf{Genc [IN PROGRESS]}}
+    {An open-source build system for C/C++ projects, built using C, designed to build, test and manage dependencies efficiently.}
+    \resumeSubItem{Xpscan}
+    {An open-source TCP port scanner built in C++, capable of scanning large IP ranges efficiently using multithreading and raw socket programming.}
+  \resumeSubHeadingListEnd
+
+%--------SKILLS------------
+  \section{Tech Stack}
+ \resumeSubHeadingListStart
+   \item{
+       \textbf{Languages}{: Java, C, C++, Typescript , SQL, HTML, CSS}
+     \hfill
+\textbf{Database:} OracleDB, MySQL, PostgreSQL, Redis\\
+\textbf{Frameworks \& Tools}{: Spring, Angular, react, Git, VCS, Docker, Jenkins, JUnit, Sonar, ssh, bash, Linux}
+}
+ \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
