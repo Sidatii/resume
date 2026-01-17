@@ -34,6 +34,9 @@ v1/*.cb
 v2/*.cb2
 v1/.*.lb
 v2/.*.lb
+v1/*.fdb_latexmk
+v2/*.fdb_latexmk
+v1/*.gz
 
 ## BibTeX auxiliary files:
 *.bbl
