@@ -14,6 +14,7 @@ Archieve/
 *.cb
 *.cb2
 .*.lb
+*.pdf
 v1/*.aux
 v2/*.aux
 v1/*.log
@@ -37,6 +38,9 @@ v2/.*.lb
 v1/*.fdb_latexmk
 v2/*.fdb_latexmk
 v1/*.gz
+v2/*.gz
+v1/*pdf
+v2/*pdf
 
 ## BibTeX auxiliary files:
 *.bbl
